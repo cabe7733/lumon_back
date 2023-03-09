@@ -6,10 +6,7 @@ export default class Task extends BaseModel {
   public id: number
 
   @column()
-  public id_creator: number
-
-  @column()
-  public name_creator: string
+  public title: string
 
   @column()
   public description: string
@@ -24,7 +21,7 @@ export default class Task extends BaseModel {
   public incharge: string
 
   @column()
-  public tags: string
+  public tags: JSON
 
   @column.dateTime({ autoCreate: true })
   public createdAt: DateTime

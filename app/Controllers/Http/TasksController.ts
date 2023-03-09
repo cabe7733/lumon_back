@@ -11,19 +11,11 @@ export default class TasksController {
   public async store({ request, response }: HttpContextContract) {
     const body = request.body()
     const moment = await Task.create(body)
-
     response.status(201)
-
     return {
       message: 'Se ha ingresado la tarea con exito!',
       data: moment,
     }
-  }
-
-  public async show({ response,params }) {
-    const id = params.id;
-    const task = await Task.findBy('id', id)
-    return response.ok(task)
   }
 
   public async destroy({ params }){

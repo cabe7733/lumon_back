@@ -28,8 +28,6 @@ Route.group(()=>{
 
   Route.resource('/task','TasksController').apiOnly()
 
-  Route.resource('/user','UsersController').apiOnly()
-
 }).prefix('/api')
 
 
