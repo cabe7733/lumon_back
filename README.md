@@ -15,8 +15,13 @@ or
 ```bash
 $ yarn 
 ```
+3. Config proyect 
+### Debe tener XAMP o WAMP o MAMP instalado y ejecutandose a la hora de correr las migraciones
+```bash
+$ node ace migration:run
+```
 
-3. Start proyect 
+4. Start proyect 
 ```bash
 $ node ace serve
 ```
